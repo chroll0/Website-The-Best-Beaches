@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Beaches</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <video class="video-container" muted autoplay loop>
+        <source src="Image/backgroundvideo.mp4" type="video/mp4" />
+      </video>
+      <button class="switch-btn">
+        <span>play</span>
+        <span>pause</span>
+        <span class="switch"></span>
+      </button>
+    </header>
+    <section id="mainPage">
+      <div class="headerBox">
+        <h1>explore your <span>favorite</span> one</h1>
+      </div>
+      <div class="paragraphHeader">
+        <h2>Here are five beaches you need to visit in your lifetime</h2>
+      </div>
+      <div class="textBox firstBox" boxIndex="0">
+        <p>Elafonissi, Greece</p>
+      </div>
+      <div class="textBox secondBox" boxIndex="1">
+        <p>Hanalei Bay, Hawaii</p>
+      </div>
+      <div class="textBox thirdBox" boxIndex="2">
+        <p>Copacabana, Brazil</p>
+      </div>
+      <div class="textBox fourthBox" boxIndex="3">
+        <p>Grayton, Florida</p>
+      </div>
+      <div class="textBox fifthBox" boxIndex="4">
+        <p>Le Morne, Mauritius</p>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modalContainer">
+        <ion-icon class="closeModal" name="close"></ion-icon>
+        <h2 class="modalHeader"></h2>
+        <div class="imageContainer">
+          <ion-icon class="icon back" name="caret-back-outline"></ion-icon>
+          <img class="modalImage" src="" />
+          <ion-icon
+            class="icon forward"
+            name="caret-forward-outline"
+          ></ion-icon>
+        </div>
+        <p class="modalParagraph"></p>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Heebo:wght@300;400;600;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  transition: 0.8s;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  place-items: center;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.switch-btn {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  box-shadow: none;
+  transition: 0.8s;
+  padding: 0;
+  z-index: 1;
+}
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #05698d;
+}
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #05698d;
+  border-radius: 8px;
+  margin: 0;
+  display: block;
+  transition: 0.8s;
+}
+.slide .switch {
+  left: 50%;
+}
+/* section */
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.headerBox {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  width: 50%;
+  min-width: 250px;
+  line-height: 3.2rem;
+}
+h1 {
+  color: white;
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  line-height: 2.8rem;
+  letter-spacing: 0.6rem;
+  margin: 0;
+}
+.headerBox span {
+  color: #05698d;
+}
+.paragraphHeader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paragraphHeader h2 {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  width: 80%;
+  max-width: 450px;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}
+.textBox {
+  width: 205px;
+  height: 35px;
+  cursor: pointer;
+}
+.textBox p {
+  width: 100%;
+  height: 35px;
+  margin: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.textBox:hover > p {
+  color: #05698d;
+}
+.textBox:hover {
+  width: 220px;
+}
+.firstBox {
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+.secondBox {
+  position: absolute;
+  top: 66%;
+  right: 0;
+}
+.thirdBox {
+  position: absolute;
+  top: 72%;
+  right: 0;
+}
+.fourthBox {
+  position: absolute;
+  top: 78%;
+  right: 0;
+}
+.fifthBox {
+  position: absolute;
+  top: 84%;
+  right: 0;
+}
+.modal {
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer {
+  width: 85%;
+  height: 80%;
+  max-width: 1100px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.modalContainer h2 {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageContainer .icon {
+  color: #05698d;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.imageContainer .forward {
+  left: 90%;
+}
+.modalImage {
+  border-radius: 10px;
+  width: 60%;
+}
+.modalParagraph {
+  padding: 0 5%;
+  margin: 0;
+  text-align: justify;
+  color: white;
+  font-size: 13px;
+}
+.closeModal {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+.closeModal:hover {
+  cursor: pointer;
+  color: #05698d;
+  rotate: 90deg;
+}
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 60px;
+    line-height: 4.2rem;
+    letter-spacing: 1.1rem;
+  }
+  .paragraphHeader h2 {
+    line-height: 1.8rem;
+  }
+  .modalParagraph {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .headerBox {
+    max-width: 600px;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 5.5rem;
+    letter-spacing: 1.2rem;
+  }
+  .paragraphHeader {
+    top: 50%;
+  }
+}
